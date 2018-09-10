@@ -61,7 +61,7 @@
   top: 20%;
   left: 21.2%;
   animation: move 7s linear infinite;
-	background-image: linear-gradient(to right, #6A5ACD, #9c167b, #34a7c7, #1a50ad);
+	background-image: linear-gradient(to right, #20B2AA, #9c167b, #DB7093, #34a7c7);
 	background-size: 200% auto;
 	font: 700 70px/1;
 	letter-spacing: 7px;
@@ -76,7 +76,7 @@
 }
 .aboutsection p {
   position: absolute;
-  left: -100%;
+  left: -145%;
   text-align: justify;
 }
 
@@ -123,7 +123,7 @@
   top: 328.5%;
   right: 0%;
   width: 210%;
-  height: 500px;
+  height: 400px;
   clip-path: polygon(50% 0%, 100% 100%, 100% 100%, 100% 0%);
 }
 .bloccoverde {
@@ -142,35 +142,35 @@
   top: 340%;
   left: 81%;
 }
-.mail{
+#mail{
 position: absolute;
 top: 355%;
 left: 7%;
 width: 65px;
 height: 55px;
 }
-.instagram{
+#instagram{
   position: absolute;
   top: 355%;
   left: 64%;
   width: 55px;
   height: 55px;
 }
-.facebook{
+#facebook{
   position: absolute;
   top: 355%;
   left: 72%;
   width: 55px;
   height: 55px;
 }
-.pinterest{
+#pinterest{
   position: absolute;
   top: 355%;
   left: 88%;
   width: 55px;
   height: 55px;
 }
-.behance{
+#behance{
   position: absolute;
   top: 355%;
   left: 80%;
@@ -192,6 +192,19 @@ height: 55px;
 position: absolute;
 top: 356.5%;
 left: 13%;
+}
+
+.bloccogradiente {
+z-index: 0;
+position: absolute;
+width: 155%;
+height: 11%;
+top: 372.5%;
+left: 0%;
+animation: move 5s linear infinite;
+background-size: 200% auto;
+background-image: linear-gradient(to right, #20B2AA, #9c167b, #DB7093, #34a7c7);
+clip-path: polygon(0% 0%, 0% 0%, 65% 100%, 0% 100%);
 }
 
 </style>
@@ -226,7 +239,10 @@ left: 13%;
 <div class="aboutsection">
   <h2 id="aboutme">ABOUT ME</h2>
   <br>
-  <p> Ciao, sono Greta, una ragazza di 22 anni. Vengo da Malesco, un paesino in provincia di Verbania. Ho frequentato il liceo scientifico a Domodossola. </p>
+  <br>
+  <p> Hi everyone!
+      My name is Greta and I’m a 22 year old student from Italy. I come from Malesco, a small village in the north west of the country. During my previous studies I attended the scientific high school Giorgio Spezia in Domodossola and I’m currently studying Communication Design at Politecnico di Milano. The reason why I chose to deepen my knowledge of design and to study it at university is that I’ve always been fond of art and culture. I’ve also been interested in understanding communication techniques through design itself and their means.
+ </p>
 </div>
   <img class="im-circle" src="_MG_2741.jpeg">
 </div
@@ -253,6 +269,8 @@ class="sfondoabout">
 <div class="bloccogrigio">
 </div>
 <div class="bloccoverde">
+</div>
+<div class="bloccogradiente">
 </div>
 
 <button type="button" class="btn btn-outline-dark">gretasuperbi@yahoo.it</button>
@@ -301,13 +319,13 @@ class="sfondoabout">
 </div>
 
 <div class="iconecontatti">
-  <div> <img class="mail" src="Contact/Email.png">
+  <div> <img id="mail" class="mail" src="Contact/Email.png">
     <p class="email"> E-mail: </p>
   </div>
-  <div> <a href="https://www.instagram.com/gretasuperbi/?hl=it"><img class="instagram" src="Contact/Instagram.png"></a> </div>
-  <div> <a href="https://www.facebook.com/greta.superbi"><img class="facebook" src="Contact/Facebook.png"></a>  </div>
-  <div> <a href="https://www.pinterest.it/superbigreta/"><img class="pinterest" src="Contact/Pinterest.png"></a>  </div>
-  <div> <a href="https://www.behance.net/gretasuper2496"><img class="behance" src="Contact/Behance.png"></a>  </div>
+  <div> <a href="https://www.instagram.com/gretasuperbi/?hl=it"><img id="instagram" class="app" src="Contact/Instagram.png"></a> </div>
+  <div> <a href="https://www.facebook.com/greta.superbi"><img id="facebook" class="app" src="Contact/Facebook.png"></a>  </div>
+  <div> <a href="https://www.pinterest.it/superbigreta/"><img id="pinterest" class="app" src="Contact/Pinterest.png"></a>  </div>
+  <div> <a href="https://www.behance.net/gretasuper2496"><img id="behance" class="app" src="Contact/Behance.png"></a>  </div>
   <p class="social"> Social: </p>
 </div>
 
